@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "CookieSameSiteCheck",
+  "version": "0.1",
+  "author": "mlsk",
+  "icons": { "16": "cookie.png", "48": "cookie.png", "128": "cookie.png" },
+  "description": "Check all cookies' SameSite",
+  "permissions": ["cookies"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

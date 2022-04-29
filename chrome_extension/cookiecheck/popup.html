@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    padding: 10px;
+    max-width: 600px;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%
+}
+
+tr:hover { background-color: coral; }
+
+th {
+    background: #666;
+    color: #fff;
+}
+
+th:nth-child(1) {
+    width: 18%;
+}
+
+td:nth-child(1) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+th:nth-child(2) {
+    width: 15%;
+}
+
+td:nth-child(2) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+th:nth-child(3) {
+    width: 30%;
+}
+
+td:nth-child(3) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+th:nth-child(4) {
+    width: 7%;
+}
+
+td:nth-child(4) {
+    display: block;
+}
+
+
+input {
+    width: 50%;
+    height: 24px;
+    font-size: 15px;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+h1 { font-weight: normal; }
+
+
+</style>
+    <script src="popup.js"></script>
+</head>
+<body>
+<div>
+    <h1><img src="cookie-unspecified.png" alt="">Cookies with Unspecified SameSite<img src="cookie-unspecified.png" alt=""></h1>
+    <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter by">
+    <table class="order-table table">
+    </table>
+</div>
+</body>
+</html>
